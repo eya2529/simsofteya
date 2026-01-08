@@ -1,0 +1,76 @@
+@if (service(); as s) {
+  <section class="service-hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <a routerLink="/" fragment="services" class="back-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Retour aux services
+        </a>
+        <h1 class="service-title">{{ s.title }}</h1>
+        <p class="service-subtitle">{{ s.subtitle }}</p>
+        <div class="hero-actions">
+           <a routerLink="/contact" class="btn btn-primary">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bg-overlay"></div>
+  </section>
+
+  <section class="service-description">
+    <div class="container">
+      <div class="description-card">
+        <p class="main-description">{{ s.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-features">
+    <div class="container">
+      <h2 class="section-heading">Fonctionnalités Clés</h2>
+      <div class="features-grid">
+        @for (feature of s.features; track feature.title) {
+          <div class="feature-item">
+            <div class="check-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>{{ feature.title }}</h3>
+              <p>{{ feature.description }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="service-benefits">
+    <div class="container">
+      <div class="benefits-wrapper">
+        <h2 class="section-heading">Vos Avantages</h2>
+        <ul class="benefits-list">
+          @for (benefit of s.benefits; track benefit) {
+            <li>
+              <span class="bullet"></span>
+              {{ benefit }}
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="service-cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Prêt à démarrer ?</h2>
+        <p>Nos experts sont à votre disposition pour analyser vos besoins.</p>
+        <a routerLink="/contact" class="btn btn-white">Obtenir un devis gratuit</a>
+      </div>
+    </div>
+  </section>
+}

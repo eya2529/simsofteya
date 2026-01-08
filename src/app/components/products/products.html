@@ -1,0 +1,31 @@
+<section class="products" id="produits">
+  <div class="products-container">
+    <div class="section-header">
+      <span class="section-label">Nos Produits</span>
+      <h2 class="section-title">Solutions Complètes pour Votre Entreprise</h2>
+      <p class="section-description">
+        Des logiciels performants conçus pour répondre aux besoins spécifiques de votre secteur d'activité
+      </p>
+    </div>
+
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let product of products; let i = index">
+        <div class="product-icon-wrapper">
+          <div class="product-icon" [innerHTML]="getIconSvg(product.iconSvg)"></div>
+          <div class="product-glow"></div>
+        </div>
+        <h3 class="product-title">{{ product.title }}</h3>
+        <p class="product-description">{{ product.description }}</p>
+        <div class="product-features">
+          <span class="feature-tag" *ngFor="let feature of product.features">{{ feature }}</span>
+        </div>
+        <a [routerLink]="product.link || '/contact'" class="product-link">
+          En savoir plus
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

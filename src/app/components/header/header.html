@@ -1,0 +1,27 @@
+<header class="header" [class.scrolled]="isScrolled()">
+  <div class="header-container">
+    <div class="logo-wrapper">
+      <a href="#accueil" class="logo-link" (click)="scrollToSection($event, '#accueil')">
+        <img src="/Logo.png" alt="Simsoft Technologies" class="logo" />
+      </a>
+    </div>
+    
+    <nav class="nav" [class.active]="isMenuOpen()">
+      <a href="#accueil" class="nav-link" (click)="scrollToSection($event, '#accueil')">Accueil</a>
+      <a href="#services" class="nav-link" (click)="scrollToSection($event, '#services')">Services</a>
+      <a href="#produits" class="nav-link" (click)="scrollToSection($event, '#produits')">Produits</a>
+      <a href="#references" class="nav-link" (click)="scrollToSection($event, '#references')">Références</a>
+      <a href="#partenaires" class="nav-link" (click)="scrollToSection($event, '#partenaires')">Partenaires</a>
+      <a href="/contact" class="nav-link" (click)="scrollToSection($event, '#contact')">Contact</a>
+      <a href="/contact" class="nav-link nav-cta" (click)="scrollToSection($event, '#contact')">Commencer</a>
+    </nav>
+    
+    <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-label]="isMenuOpen() ? 'Fermer le menu' : 'Ouvrir le menu'">
+      <span class="menu-icon" [class.active]="isMenuOpen()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </div>
+</header>
