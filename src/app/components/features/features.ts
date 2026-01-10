@@ -31,7 +31,7 @@ export class Features {
         'Planification et optimisation',
         'Tâches de gestion complètes et précises'
       ],
-      id: 'firstparc'
+      id: 'gmao-firstparc'
     },
     {
       iconSvg: 'support',

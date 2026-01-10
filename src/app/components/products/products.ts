@@ -22,28 +22,31 @@ export class Products {
   products: Product[] = [
     {
       iconSvg: 'chart',
-      title: 'Divalto',
-      description: 'Outil ERP dédié aux PME et aux ETI proposant des outils de performance intégrant les nouvelles technologies sans remettre en cause vos investissements.',
-      features: ['ERP', 'PME/ETI', 'Performance'],
+      title: 'Divalto ERP',
+      description: 'ERP français N°1 pour PME-ETI. Solution complète intégrant Gestion, CRM, Production, Finance, Paie RH et WMS.',
+      features: ['ERP Complet', 'PME/ETI', 'Cloud/On-Premise'],
       link: '/services/divalto'
     },
     {
       iconSvg: 'car',
-      title: 'FirstParc',
-      description: 'GMAO (Gestion de Maintenance Assistée par Ordinateur) conçue pour assurer de façon concrète et précise l\'ensemble des tâches de gestion de parc automobile.',
-      features: ['GMAO', 'Parc Automobile', 'Maintenance']
+      title: 'GMAO FIRST PARC',
+      description: 'Solution experte de gestion de parc automobile avec 12 modules intégrés : maintenance, carburant, coûts et tableaux de bord.',
+      features: ['GMAO', 'Parc Auto', '12 Modules'],
+      link: '/gmao-firstparc'
     },
     {
       iconSvg: 'platform',
-      title: 'WaveSoft',
-      description: 'Solution complète qui intègre toutes les fonctionnalités d\'une entreprise moderne au sein d\'une seule plateforme et d\'une seule base de données.',
-      features: ['Plateforme', 'Intégration', 'Complet']
+      title: 'WaveSoft ERP',
+      description: 'Solution ERP tunisienne locale parfaitement adaptée aux normes et réglementations tunisiennes avec support en français et arabe.',
+      features: ['ERP Tunisien', 'Conformité Locale', 'Support Local'],
+      link: '/services/wavesoft'
     },
     {
       iconSvg: 'shield',
-      title: 'Sophos',
-      description: 'Sophos XG Firewall renouvelle entièrement la manière dont vous administrez votre pare-feu, contrez les menaces et contrôlez votre réseau.',
-      features: ['Firewall', 'Sécurité', 'Réseau']
+      title: 'Sophos Security',
+      description: 'Protection cybersécurité nouvelle génération : XG Firewall, Intercept X anti-ransomware et sécurisation du télétravail.',
+      features: ['Firewall', 'Anti-Ransomware', 'Cloud'],
+      link: '/services/sophos'
     }
   ];
 

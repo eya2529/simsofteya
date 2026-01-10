@@ -1,0 +1,172 @@
+<section class="gmao-hero">
+  <div class="container">
+    <a routerLink="/" fragment="services" class="back-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M19 12H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Retour aux services
+    </a>
+    <h1 class="hero-title">GMAO FIRST PARC</h1>
+    <p class="hero-subtitle">La Solution Experte pour la Gestion de Votre Parc Automobile</p>
+    <p class="hero-description">
+      FirstParc est une solution GMAO (Gestion de Maintenance Assistée par Ordinateur) conçue spécifiquement
+      pour assurer de façon concrète et précise l'ensemble des tâches de gestion de parc automobile.
+    </p>
+    <div class="hero-actions">
+      <a routerLink="/contact" class="btn btn-primary">Demander une Démo</a>
+      <a href="#modules" class="btn btn-secondary">Découvrir les Modules</a>
+    </div>
+  </div>
+</section>
+
+<section class="gmao-overview" id="overview">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Vue d'Ensemble</span>
+      <h2 class="section-title">Une Solution Complète pour Votre Parc</h2>
+    </div>
+    <div class="overview-content">
+      <div class="overview-item">
+        <div class="overview-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Gain de Temps</h3>
+        <p>Automatisez vos tâches répétitives et concentrez-vous sur l'essentiel</p>
+      </div>
+      <div class="overview-item">
+        <div class="overview-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Réduction des Coûts</h3>
+        <p>Optimisez vos dépenses de 15% à 20% grâce à une meilleure gestion</p>
+      </div>
+      <div class="overview-item">
+        <div class="overview-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3V21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 16L12 11L16 15L21 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Performance</h3>
+        <p>Tableaux de bord et KPIs pour piloter efficacement votre activité</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gmao-modules" id="modules">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">12 Modules Intégrés</span>
+      <h2 class="section-title">Modules de Gestion</h2>
+      <p class="section-description">
+        Une suite complète de modules pour gérer tous les aspects de votre parc automobile
+      </p>
+    </div>
+    <div class="modules-grid">
+      <div class="module-card" *ngFor="let module of modules; let i = index" [style.animation-delay]="(i * 0.05) + 's'">
+        <div class="module-icon" [innerHTML]="getIconSvg(module.icon)"></div>
+        <h3>{{ module.title }}</h3>
+        <p>{{ module.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gmao-features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Fonctionnalités Clés</span>
+      <h2 class="section-title">Pourquoi Choisir FIRST PARC ?</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" *ngFor="let feature of keyFeatures">
+        <div class="feature-icon" [innerHTML]="getIconSvg(feature.icon)"></div>
+        <div class="feature-content">
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gmao-benefits">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Avantages</span>
+      <h2 class="section-title">Les Bénéfices pour Votre Entreprise</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-item" *ngFor="let benefit of benefits; let i = index" [style.animation-delay]="(i * 0.08) + 's'">
+        <div class="benefit-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <p>{{ benefit }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gmao-references" id="references">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Références</span>
+      <h2 class="section-title">Ils Nous Font Confiance</h2>
+      <p class="section-description">
+        FIRST PARC est utilisé par de nombreuses entreprises et organismes en Tunisie et en Afrique
+      </p>
+    </div>
+    <div class="references-content">
+      <div class="references-column">
+        <h3>Tunisie</h3>
+        <ul class="references-list">
+          <li *ngFor="let ref of references.tunisia">
+            <div class="ref-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5 21V7L13 2L21 7V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span>{{ ref }}</span>
+          </li>
+        </ul>
+      </div>
+      <div class="references-column">
+        <h3>Afrique</h3>
+        <ul class="references-list">
+          <li *ngFor="let ref of references.africa">
+            <div class="ref-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span>{{ ref }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gmao-cta">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Prêt à Optimiser la Gestion de Votre Parc ?</h2>
+      <p>Découvrez comment FIRST PARC peut transformer votre gestion de flotte</p>
+      <div class="cta-actions">
+        <a routerLink="/contact" class="btn btn-white">Demander une Démonstration</a>
+        <a routerLink="/contact" class="btn btn-outline">Obtenir un Devis</a>
+      </div>
+    </div>
+  </div>
+</section>

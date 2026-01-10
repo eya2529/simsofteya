@@ -153,30 +153,98 @@ export const SERVICES: { [key: string]: ServiceData } = {
       Partenaire intégrateur de référence, Simsoft Technologies déploie l'ERP Divalto pour transformer la gestion des PME et ETI.
       Divalto est un éditeur français reconnu pour sa robustesse et sa capacité à s'adapter aux spécificités de chaque métier.
       Notre mission est de vous fournir une solution qui centralise vos données, optimise vos processus et vous offre une vision 360° de votre activité.
+
+      L'ERP Divalto couvre tous les domaines de gestion : Gestion Commerciale, CRM, Production, Comptabilité, Finance, Paie RH,
+      Gestion de Projets, WMS, et bien plus encore. Chaque module est conçu pour s'intégrer parfaitement aux autres.
     `,
     features: [
       {
-        title: 'UX Intuitive',
-        description: 'Une interface utilisateur pensée pour la productivité et l\'adoption rapide par vos équipes.'
+        title: 'Gestion Commerciale Complète',
+        description: 'Devis, commandes, facturation, gestion des stocks, achats et ventes avec workflow automatisé.'
+      },
+      {
+        title: 'CRM Intégré',
+        description: 'Suivi client 360°, pipeline commercial, campagnes marketing et gestion des opportunités.'
+      },
+      {
+        title: 'Production & MES',
+        description: 'Planification, ordonnancement, suivi atelier, gestion des OF et traçabilité complète.'
+      },
+      {
+        title: 'Finance & Comptabilité',
+        description: 'Comptabilité générale, analytique, trésorerie, contrôle de gestion et consolidation.'
+      },
+      {
+        title: 'Paie & RH',
+        description: 'Gestion complète du personnel, paie, formation, recrutement et entretiens.'
+      },
+      {
+        title: 'WMS & Logistique',
+        description: 'Gestion d\'entrepôt avancée, préparation de commandes, expéditions et traçabilité.'
+      },
+      {
+        title: 'Business Intelligence',
+        description: 'Tableaux de bord personnalisés, reporting avancé et aide à la décision.'
       },
       {
         title: 'Connectivité',
-        description: 'APIs ouvertes pour s\'interfacer facilement avec tout votre écosystème logiciel.'
-      },
-      {
-        title: 'Richesse Fonctionnelle',
-        description: 'Une profondeur de fonctionnalités rare pour un ERP de cette catégorie (CRM, Production, Paie, WMS, Affaires).'
-      },
-      {
-        title: 'Savoir-faire métier',
-        description: 'Des pré-configurations adaptées à l\'industrie, au négoce et aux services.'
+        description: 'APIs ouvertes, EDI, e-commerce et intégration avec votre écosystème logiciel.'
       }
     ],
     benefits: [
-      'Solution complète & modulaire',
-      'Agile & Évolutif avec votre croissance',
-      'Accessible partout (Web & Mobile)',
-      'Outils de performance nouvelle génération'
+      'Solution complète et modulaire adaptée à votre croissance',
+      'Interface moderne accessible Web et Mobile',
+      'Gain de productivité de 20% à 30%',
+      'ROI rapide grâce à l\'automatisation',
+      'Support et formation par nos experts certifiés',
+      'Hébergement Cloud ou On-Premise selon vos besoins'
+    ]
+  },
+  'wavesoft': {
+    id: 'wavesoft',
+    title: 'WaveSoft ERP',
+    subtitle: 'Solution ERP Tunisienne Complète et Locale',
+    description: `
+      WaveSoft est une solution ERP tunisienne développée localement pour répondre aux besoins spécifiques
+      des entreprises tunisiennes. Cette plateforme intègre toutes les fonctionnalités d'une entreprise moderne
+      au sein d'une seule plateforme et d'une seule base de données.
+
+      Avec WaveSoft, bénéficiez d'un ERP parfaitement adapté aux réglementations tunisiennes,
+      avec un support local en français et en arabe.
+    `,
+    features: [
+      {
+        title: 'Gestion Commerciale',
+        description: 'Gestion complète des ventes, achats, stocks et facturations conforme à la législation tunisienne.'
+      },
+      {
+        title: 'Comptabilité Locale',
+        description: 'Comptabilité adaptée aux normes comptables tunisiennes avec déclarations fiscales intégrées.'
+      },
+      {
+        title: 'Gestion des Stocks',
+        description: 'Suivi en temps réel des stocks, inventaires, mouvements et valorisation.'
+      },
+      {
+        title: 'CRM & Ventes',
+        description: 'Gestion de la relation client, suivi des opportunités et pipeline de vente.'
+      },
+      {
+        title: 'Production',
+        description: 'Planification de production, nomenclatures, ordres de fabrication et suivi atelier.'
+      },
+      {
+        title: 'Paie & RH',
+        description: 'Gestion du personnel, calcul de paie conforme à la législation sociale tunisienne.'
+      }
+    ],
+    benefits: [
+      'Solution 100% conforme aux normes tunisiennes',
+      'Support local en français et arabe',
+      'Prix compétitifs adaptés au marché tunisien',
+      'Formation et accompagnement sur mesure',
+      'Mises à jour régulières selon les évolutions réglementaires',
+      'Base de données unique pour une vision consolidée'
     ]
   }
 };
